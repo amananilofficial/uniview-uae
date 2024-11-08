@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+.kiconlist img {
+  margin: 5px 10px 0px 0px;
+  display: inline-block;
+  width: 60px;
+  height: auto;
+}
+.tableProDetails {
+  width: 100%;
+  overflow: auto;
+}
+.tableProDetails table {
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 0.4rem !important;
+  border-collapse: collapse;
+}
+.tableProDetails th,
+.tableProDetails td {
+  padding: 10px 15px;
+  line-height: 24px;
+  color: #39425f;
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.tableProDetails th,
+.tableProDetails td.thead {
+  background-color: #f2f2f2;
+  text-align: left;
+  font-weight: normal;
+}
+
+.tableProDetails td.thead {
+  font-weight: bold;
+}
+
+.tableProDetails td img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tableProDetails td table {
+  min-width: auto;
+}
+.p-contlist .Features h3 {
+  line-height: 1.4;
+  font-size: 24px;
+  margin-top: 0.75rem;
+  margin-bottom: 0.2rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.098);
+}
+.p-contlist .Features h3:first-child {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+.p-contlist .Features p {
+  position: relative;
+  padding-left: 0.5rem;
+  font-size: 16px;
+}
+.p-contlist .Features p img {
+  display: none;
+}
+.p-contlist .Features p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 4px;
+  height: 4px;
+  background-color: #0560f5;
+  border-radius: 50%;
+}
+#ManualDownload:before,
+#ManualDownload:after {
+  display: table;
+  content: " ";
+}
+#ManualDownload:after {
+  clear: both;
+}
+#ManualDownload p {
+  float: left;
+  width: 50%;
+  padding: 0px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#ManualDownload p a {
+  margin: 10px;
+  padding: 0.6rem 1.2rem 0.6rem 2rem;
+  line-height: 1.3;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color: #222;
+  background: url(https://www.uniview.com/tres/images/2022/img/pdf_off.png) #fff no-repeat 0.8rem center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#ManualDownload p a.sdl {
+  background: url(https://www.uniview.com/tres/images/Yushi_Site/header/download.png) #fff no-repeat
+    0.8rem center;
+}
+
+#ManualDownload p a:hover {
+  color: #0560f5;
+  background: url(https://www.uniview.com/tres/images/2022/img/pdf.png) #fff no-repeat 0.8rem center;
+}
+
+#ManualDownload p a.sdl:hover {
+  color: #0560f5;
+  background: url(https://www.uniview.com/tres/images/Yushi_Site/header/download.png) #fff no-repeat
+    0.8rem center;
+}
+
+@media (max-width: 480px) {
+  #ManualDownload p {
+    float: none;
+    width: 100%;
+  }
+  #ManualDownload p a {
+    margin: 10px 0px;
+    white-space: inherit;
+    text-overflow: none;
+  }
+}

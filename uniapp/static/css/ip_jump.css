@@ -1,0 +1,159 @@
+.ip_container{
+    width: 790px;
+    margin: 0 auto;
+    height: 70px;
+    z-index: 1;
+    /* padding-top: 20px;
+    position: relative; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+.black_background{
+    /* height: 70px; */
+    background-color: #000;
+    color: #ffffff;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+}
+.black_background .title{
+    font-size: 14px;
+}
+.choice{
+    width: 385px;
+    height: 37px;
+    /*background: #2A2929;*/
+    border: 1px solid #707070;
+    border-radius: 4px;
+    /*outline-width: 0px;*/
+    /*color: #ffffff;*/
+    /*padding: 5px 10px 5px 24px;*/
+    /*box-sizing: border-box;*/
+    display: inline-block;
+    /* position: absolute; */
+    /* left: 370px;
+    top: 20px; */
+}
+/*.choice div{*/
+/*    border-top-color: rgb(112, 112, 112);*/
+/*    border-top-style: solid;*/
+/*    border-top-width: 1px;*/
+/*    border-bottom-right-radius: 4px;*/
+/*    border-bottom-left-radius: 4px;*/
+/*}*/
+.choice .selected{
+    border-top-color: rgb(112, 112, 112);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.choice li{
+    background-color: #333232;
+    /* width: 260px;
+    height: 28px; */
+    /*border: 1px solid #707070;*/
+    /*border-radius: 4px;*/
+    outline-width: 0px;
+    color: #ffffff;
+    padding: 5px 10px 5px 24px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.ip_container div li{
+    display: none;
+}
+.jump{
+    width: 71px;
+    height: 35px;
+    background: #2682B6;
+    border-radius: 4px;
+    display: inline-block;
+    /*margin-left: 450px;*/
+    /*margin-top: 2px;*/
+    cursor: pointer;
+    line-height: 35px;
+    text-align: center;
+}
+.langbtntext{
+    line-height: 35px;
+}
+
+.ip_container .close_button{
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 18px;
+}
+
+.ip_container .right{
+    /* position: absolute;
+    right: 20px;
+    top: 18px; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+#nation li:hover{
+    background-color: #2A2929;
+    cursor: pointer;
+}
+.choice .li_input{
+    border-radius: 4px;
+    height: 35px;
+    background: #2A2929;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.choice .li_input_click{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+@media (max-width: 800px){
+
+    .ip_container{
+        width: calc(100% - 34px);
+    height: 120px;
+    min-width: 320px;
+    padding: 17px 17px 0 17px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    }
+    .black_background{
+        height: auto;
+    }
+    .choice{
+        top: 100px; /*用bottom会导致li出现在上方*/
+        left: 17px;
+        width: 214px;
+    }
+    .title{
+        display: block;
+    }
+    .jump{
+        position: absolute;
+        right: 17px;
+        bottom: 20px;
+    }
+    .close_button{
+        position: absolute;
+        right: 17px;
+        top: 17px;
+    }
+    .right{
+        position: static;
+    }
+}
+@media (max-width: 400px) {
+    .choice li{
+        width: 210px;
+    }
+}

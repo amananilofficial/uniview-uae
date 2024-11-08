@@ -1,0 +1,677 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="content-language" content="zh-CN" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+  <title>Cookie Policy - Uniview - Leader of AIoT Solution</title>
+  <meta name="MSSmartTagsPreventParsing" content="true" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="renderer" content="webkit">
+  <meta name="keywords" content="Cookie Policy" />
+  <meta name="description" content="Cookie Policy" />
+  {% load static %}
+
+  <link rel="shortcut icon" href="{% static 'assets/images/favicon.ico' %}" />
+  <link rel="stylesheet" href="{% static 'css/unv.css' %}">
+  <link rel="stylesheet" href="{% static 'css/ip_jump.css' %}">
+  <link rel="stylesheet" href="{% static 'css/hover.css' %}">
+  <link rel="stylesheet" href="{% static 'css/mob.css' %}">
+  <link rel="stylesheet" href="{% static 'css/video.css' %}">
+  <link rel="stylesheet" href="{% static 'swiper/swiper.min.css' %}">
+  <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+  <script src="{% static 'js/jquery.transit.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'swiper/swiper.min.js' %}"></script>
+  <script src="{% static 'js/JR.js' %}"></script>
+
+
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PTC2RNS');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- begin XHL code-->
+  <script>
+    if (!window._XHL) {
+      (function (x, h, l, j, s) {
+        x[j] = x[j] || function () {
+          (x[j].a = x[j].a || []).push(arguments)
+        };
+        s = h.createElement(l);
+        z = h.getElementsByTagName(l)[0];
+        s.async = true;
+        s.charset = 'UTF-8';
+        s.src = 'https://lib.leadscloud.com/xhltrackingwithchat.js';
+        z.parentNode.insertBefore(s, z);
+      })(window, document, 'script', '_XHL');
+      _XHL("entID", 10970)
+    }
+  </script>
+  <!--end XHL code-->
+
+  <style type="text/css">
+    #dialog {
+      height: 110px;
+      width: 100%;
+      background-color: #ccc;
+      color: #333;
+      text-align: center;
+      font-size: 12px;
+      padding-top: 10px;
+      position: fixed;
+      bottom: 0;
+      z-index: 99;
+    }
+
+    .hide {
+      display: none !important;
+    }
+
+    #dialog p {
+      position: relative;
+      margin: 0 auto;
+      max-width: 960px;
+      line-height: 1.4;
+      margin-bottom: 20px;
+      font-size: 12px;
+    }
+
+    .pphide {
+      display: none;
+    }
+
+    .ppshow {
+      display: inline-block;
+    }
+
+    #dialog .ppclose {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 0;
+      top: 10px;
+    }
+
+    #dialog span {
+      display: inline;
+      margin-left: 20px;
+    }
+
+    #dialog .btu-two {
+      display: flex;
+      /* width: 200px; */
+      justify-content: space-evenly;
+      padding: 0 40%;
+    }
+
+    #dialog .btu-deny,
+    #dialog .btu-allow {
+      padding: 2px 20px;
+      font-size: 14px;
+      border-radius: 30px;
+    }
+
+    #dialog .btu-deny {
+      border: 1px solid #08c;
+    }
+
+    #dialog .btu-allow {
+
+      border: 1px solid #08c;
+
+      background: #08c;
+      color: white;
+    }
+
+    @media screen and (max-width: 960px) {
+      .ppshow {
+        display: none;
+        background-color: red;
+      }
+    }
+  </style>
+  <script type="text/javascript">
+    function cookiesave(n, v, mins, dn, path) {
+      if (n) {
+        if (!mins) mins = 365 * 24 * 60;
+        //if(!mins) mins = 1;
+        if (!path) path = "../../../index.html";
+        var date = new Date();
+
+        date.setTime(date.getTime() + (mins * 60 * 1000));
+
+        var expires = "; expires=" + date.toGMTString();
+
+        if (dn) dn = "domain=" + dn + "; ";
+        //alert(n + "=" + v + expires + "; " + dn + "path=" + path);
+        document.cookie = n + "=" + v + expires + "; " + dn + "path=" + path;
+      }
+    }
+
+    function cookieget(n) {
+      var name = n + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+      }
+      return "";
+    }
+
+    function closeclick() {
+      document.getElementById('dialog').style.display = 'none';
+      cookiesave('globalcloseclick', 'globalcloseclick', '', '', '');
+    }
+
+    function clickclose() {
+      if (cookieget('globalcloseclick') == 'globalcloseclick') {
+        document.getElementById('dialog').className = 'pphide';
+      } else {
+        document.getElementById('dialog').className = 'ppshow';
+      }
+    }
+    window.onload = clickclose;
+  </script>
+
+
+</head>
+<meta name="google-site-verification" content="c_USIUkHG5x1Uhx-uB1jOU2HsduHV3l9Za4ScCa4QuE" />
+
+<body>
+  <div id="header">
+    <div id="dialog" class="hide">
+      <p>Hello, your privacy is important to us. Uniview websites use cookies to store info on your device and create
+        the most secure and effective website. By continuing to use our websites, please accept that cookies could be
+        stored on your device, as outlined in our
+        <a href="{% url 'cookie_policy' %}">cookie policy</a> .
+      </p>
+      <div class="btu-two">
+        <a class="btu-deny" href="javascript:closeclick();">Deny</a>
+        <a class="btu-allow" href="javascript:closeclick();">Allow All</a>
+      </div>
+    </div>
+    <div class="black_background" style="display: none">
+      <div class="ip_container">
+        <div style="display: inline-block" class="title">
+          <span class="langtiptext" style="color:white"></span>
+        </div>
+        <ul class="choice" data-href="">
+          <li id="reponse" class="li_input">
+            <span class="langname" style="color:white"></span>
+            <i style="float: right">
+              <img src="{% static 'img/arrow.png' %}" alt="Arrow">
+            </i>
+          </li>
+        </ul>
+        <div class="right">
+          <div id="skip" class="jump langskip">
+            <span id="button_text" class="langbtntext" style="color:white"></span>
+          </div>
+          <div id="close" class="close_button langclose">
+            <img src="{% static 'img/close.png' %}" alt="Close">
+          </div>
+        </div>
+      </div>
+    </div>
+    <noscript><iframe src="#.googletagmanager.com/ns.html?id=GTM-PTC2RNS" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+        <header>
+          <div class="pc-header wr">
+            <div class="h-top wr">
+              <a href="{% url 'index' %}" class="logo">
+                <img src="{% static '/assets/img/logo.svg' %}" alt="">
+              </a>
+              <div class="language">
+                <div class="icon">
+                  <img src="{% static 'img/dq.png' %}" alt="">
+                </div>
+                <div class="tit-14 col-fff txt">Global - English</div>
+              </div>
+            </div>
+            <div class="h-bot wr">
+              <div class="nav">
+                <div class="li showlogo">
+                  <a href="{% url 'index' %}" class="logo">
+                    <img src="{% static '/assets/img/logo2.svg' %}" alt="">
+                  </a>
+                </div>
+                <div class="li pro">
+                  <a href="{% url 'product' %}" class="tit tit-18">products</a>
+                </div>
+                <div class="li sol">
+                  <a href="{% url 'solutions' %}" class="tit tit-18">Solutions</a>
+                </div>
+                <div class="li abo">
+                  <a href="{% url 'about' %}" class="tit tit-18">About Us</a>
+                </div>
+                <div class="li">
+                  <a href="{% url 'contact' %}" class="tit tit-18">Contact Us</a>
+                </div>
+              </div>
+              <div class="right-btn">
+                <div class="seach box">
+                  <img src="{% static '/assets/img/ss.svg' %}" alt="" class="tran-middle op1">
+                  <img src="{% static '/assets/img/ss2.svg' %}" alt="" class="tran-middle op2">
+                </div>
+                <div class="lan box">
+                  <img src="{% static '/assets/img/dq2.png' %}" alt="" class="tran-middle op1">
+                  <img src="{% static '/assets/img/dq.png' %}" alt="" class="tran-middle op2">
+                </div>
+              </div>
+              <div class="seac-box wr">
+                <div class="img">
+                  <img src="{% static '/assets/img/ss.svg' %}" alt="">
+                  <input type="text" placeholder="Search" name="k" id="K" value="">
+                  <span class="clear">X</span>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="language-box">
+            <div class="mak"></div>
+            <div class="close">
+              <img src="{% static '/assets/img/close.png' %}" alt="" class="tran-middle">
+            </div>
+            <div class="lan-list">
+              <div class="li">
+                <div class="tit tit-24 lh1">Global</div>
+                <div class="list wr">
+                  <a href="{% url 'global_english' %}" class="lis tit-16"> <span>Global </span> - English</a>
+                </div>
+              </div>
+    
+              <div class="li">
+                <div class="tit tit-24 lh1">Middle East</div>
+                <div class="list wr">
+                  <a href="{% url 'arabic' %}" class="lis tit-16"> <span>Arabic </span> - العربية</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    
+          <div class="mb-header wr">
+            <div class="main">
+              <a href="#" class="logo">
+                <img src="{% static 'img/logo1.png' %}" alt="">
+              </a>
+              <div class="right-btn">
+                <a href="javascript:void(0)" class="li">
+                  <img src="{% static 'img/dl.png' %}" alt="" class="tran-middle">
+                </a>
+                <div class="li seach">
+                  <img src="{% static 'img/mseach.png' %}" alt="" class="tran-middle">
+                </div>
+                <div class="mune li">
+                  <img src="{% static 'img/mun1.png' %}" alt="" class="op1 tran-middle">
+                  <img src="{% static 'img/mclose.png' %}" alt="" class="op2 tran-middle">
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="headerseach ">
+            <div class="top_seach">
+              <div class="view">
+                <div class="formbox">
+                  <input type="text" placeholder="Search" name="k" id="K2" value="" class="txt">
+                  <input type="submit" name="" id="SearchBtn" value="Search" class="submit">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="m-nav">
+            <div class="nav">
+              <div class="li">
+                <a href="{% url 'product' %}" class="tit">
+                  <div>products</div>
+                  <div class="icon">
+                    <img src="{% static 'img/morejt3.png' %}" alt="">
+                  </div>
+                </a>
+              </div>
+              <div class="li">
+                <a href="{% url 'solutions' %}" class="tit">
+                  <div>Solutions</div>
+                  <div class="icon">
+                    <img src="{% static 'img/morejt3.png' %}" alt="">
+                  </div>
+                </a>
+              </div>
+              <div class="li">
+                <a href="{% url 'about' %}" class="tit">
+                  <div>About Us</div>
+                  <div class="icon">
+                    <img src="{% static 'img/morejt3.png' %}" alt="">
+                  </div>
+                </a>
+              </div>
+              <div class="li">
+                <div class="tit">
+                  <div class="lan">
+                    <img src="{% static 'img/dq2.png' %}" alt="">
+                    GLOBAL / ENGLISH
+                  </div>
+                  <div class="icon">
+                    <img src="{% static 'img/morejt3.png' %}" alt="">
+                  </div>
+                </div>
+                <div class="tow-li">
+                  <div class="li-top li-top1">
+                    <div class="left">
+                      <div class="icon">
+                        <img src="{% static 'img/morejt3.png' %}" alt="">
+                      </div>
+                      <div>GLOBAL / ENGLISH</div>
+                    </div>
+                    <div class="close">
+                      <img src="{% static 'img/mclose.png' %}" alt="">
+                    </div>
+                  </div>
+                  <div class="lis">
+                    <a href="javascript:;" class="tit">
+                      <div>Global</div>
+                      <div class="icon">
+                        <img src="{% static 'img/morejt3.png' %}" alt="">
+                      </div>
+                    </a>
+                    <div class="three-li">
+                      <div class="li-top li-top2">
+                        <div class="left">
+                          <div class="icon">
+                            <img src="{% static 'img/morejt3.png' %}" alt="">
+                          </div>
+                          <div>Global</div>
+                        </div>
+                        <div class="close">
+                          <img src="{% static 'img/mclose.png' %}" alt="">
+                        </div>
+                      </div>
+                      <div class="liss">
+                        <a href="{% url 'global_english' %}" class="tit">
+                          <div><span>Global </span> - English</div>
+                          <div class="icon">
+                            <img src="{% static 'img/morejt3.png' %}" alt="">
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lis">
+                    <a href="javascript:;" class="tit">
+                      <div>Middle East</div>
+                      <div class="icon">
+                        <img src="{% static 'img/morejt3.png' %}" alt="">
+                      </div>
+                    </a>
+                    <div class="three-li">
+                      <div class="li-top li-top2">
+                        <div class="left">
+                          <div class="icon">
+                            <img src="{% static 'img/morejt3.png' %}" alt="">
+                          </div>
+                          <div>Middle East</div>
+                        </div>
+                        <div class="close">
+                          <img src="{% static 'img/mclose.png' %}" alt="">
+                        </div>
+                      </div>
+                      <div class="liss">
+                        <a href="{% url 'arabic' %}" class="tit">
+                          <div><span>Arabic </span> - العربية</div>
+                          <div class="icon">
+                            <img src="{% static 'img/morejt3.png' %}" alt="">
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Include CSS and JS files -->
+          <link rel="stylesheet" href="{% static 'css/style.css' %}">
+          <script src="{% static 'js/script.js' %}"></script>
+    
+        </header>
+  </div>
+  <div class="news-info wr">
+    <div class="cont wr view" data-search="content">
+      <DIV class="unv-tit lh12 text-center">Cookie Policy</DIV>
+      <DIV class=f-cbs><SPAN></SPAN>
+        <DIV class=shear-box><A
+            href="http://www.linkedin.com/shareArticle?mini=true&amp;url=/About_Us/Legal_Notice/Cookie_Policy/201806/804425_140493_0.htm"><IMG
+              class=tran-middle alt="" src="../../static/assets/img/infoin.png"> </A><A
+            href="https://twitter.com/intent/tweet?url=/About_Us/Legal_Notice/Cookie_Policy/201806/804425_140493_0.htm"><IMG
+              class=tran-middle alt="" src="../../static/assets/img/infoin2.png"> </A><A
+            href="https://facebook.com/sharer.php?u=/About_Us/Legal_Notice/Cookie_Policy/201806/804425_140493_0.htm"><IMG
+              class=tran-middle alt="" src="../../static/assets/img/infoin3.png"> </A></DIV><SPAN></SPAN>
+      </DIV>
+      <DIV class="ctn wr">
+        <DIV class="tit-16  wr">
+          <STYLE type=text/css>
+            .tools-table {
+              margin-bottom: 30px;
+              border-collapse: collapse;
+              border-spacing: 0;
+            }
+
+            .tools-table th,
+            .tools-table td {
+              padding: 10px 15px;
+              line-height: 24px;
+              color: #39425f;
+              border: 1px solid #ddd;
+              background-color: #FFFFFF;
+            }
+          </STYLE>
+          <DIV class=WordSection1>
+            <P><STRONG>I. What are cookies and their purposes</STRONG></P>
+            <P>In order to guarantee normal and efficient running of website, to provide you with more related services,
+              and to allow you have easier and more convenient access experience, we will save relevant information on
+              your computer or mobile device, and when you browse the website of Uniview Technologies, a folder will be
+              downloaded to your computer for the purpose of improving user’s experience.</P>
+            <P><STRONG>II. Cookies that are used by Uniview Technologies</STRONG></P>
+            <TABLE class=tools-table width="90%">
+              <TBODY>
+                <TR>
+                  <TD>Name</TD>
+                  <TD>Type</TD>
+                  <TD>Purpose</TD>
+                  <TD>Duration</TD>
+                </TR>
+                <TR>
+                  <TD>ASP.NET_SessionId</TD>
+                  <TD>Session cookie</TD>
+                  <TD>　</TD>
+                  <TD>　</TD>
+                </TR>
+                <TR>
+                  <TD>oecms.uniview.com</TD>
+                  <TD>　</TD>
+                  <TD>　</TD>
+                  <TD>　</TD>
+                </TR>
+                <TR>
+                  <TD>sems.cn-uniview.com</TD>
+                  <TD>It is to save the session id</TD>
+                  <TD>　</TD>
+                  <TD>　</TD>
+                </TR>
+                <TR>
+                  <TD>USER_LANGUAGE</TD>
+                  <TD>Persistent cookie</TD>
+                  <TD>It is to remember the page language</TD>
+                  <TD>30 days</TD>
+                </TR>
+                <TR>
+                  <TD>_gat</TD>
+                  <TD>Persistent cookie</TD>
+                  <TD>Google Analytics cookie. Used to throttle request rate</TD>
+                  <TD>1 minute</TD>
+                </TR>
+                <TR>
+                  <TD>_ga</TD>
+                  <TD>Persistent cookie</TD>
+                  <TD>Google Analytics cookie. Used to distinguish users.</TD>
+                  <TD>2 years</TD>
+                </TR>
+                <TR>
+                  <TD>_gid</TD>
+                  <TD>Persistent cookie</TD>
+                  <TD>Google Analytics cookie. Used to distinguish users.</TD>
+                  <TD>24 hours</TD>
+                </TR>
+                <TR>
+                  <TD>CNZZDATA1258418437</TD>
+                  <TD>Persistent cookie</TD>
+                  <TD>Cnzz Analytics cookie. Used to distinguish users.</TD>
+                  <TD>6 months</TD>
+                </TR>
+                <TR>
+                  <TD>UM_distinctid</TD>
+                  <TD>Persistent cookie</TD>
+                  <TD>Cnzz Analytics cookie. Used to distinguish users.</TD>
+                  <TD>6 months</TD>
+                </TR>
+              </TBODY>
+            </TABLE><BR>
+            <P><STRONG>III. Your rights</STRONG></P>
+            <P>If you want to revoke the agreement for us to use such cookies, you may change settings of your browser
+              to delete cookies from us or any other third party. You may also change settings of your browser to
+              completely block the website from setting cookies or cookies from any third party. If you choose to block
+              setting of certain cookies by us, you may find that some functions are not available, or certain part of
+              the website would not be loaded. Therefore, you are advised not to delete cookies.</P>
+            <P><STRONG>IV. Contact us</STRONG></P>
+            <P>Please contact us through security@uniview.com if you have any question about the use of cookies by
+              Uniview Technologies.</P>
+          </DIV>
+        </DIV><A onclick=javascript:history.back(-1); class=bank href="#">
+        </A>
+      </DIV>
+    </div>
+  </div>
+  <div id="footer">
+    <footer>
+      <div class="footer-top">
+        <div class="foot-nav">
+          <div class="li">
+            <a href="javascript:;" class="tit">Quick Links</a>
+            <div class="sub-nav">
+              <a href="{% url 'product' %}">products</a>
+              <a href="{% url 'solutions' %}">solutions</a>
+              <a href="{% url 'about' %}">About us</a>
+            </div>
+          </div>
+          <div class="li">
+            <a href="javascript:;" class="tit">Newsroom</a>
+            <div class="sub-nav">
+              <a href="{% url 'videos' %}">Videos</a>
+            </div>
+          </div>
+          <div class="li">
+            <a href="javascript:;" class="tit">Our Company</a>
+            <div class="sub-nav">
+              <a href="{% url 'contact' %}">Contact Us</a>
+              <a href="{% url 'careers' %}">Careers</a>
+            </div>
+          </div>
+          <div class="li">
+            <a href="javascript:;" class="tit">Subscribe</a>
+            <a href="{% url 'newsletter' %}" class="f-link col-999">
+              <div class="icon">
+                <img src="{% static '/assets/img/flink.png' %}" alt="" />
+              </div>
+              <div class="tit-14">
+                Subscribe Newsletter
+              </div>
+            </a>
+            <div class="share-list">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="{% static '/assets/img/sl1.png' %}" alt="" />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="{% static '/assets/img/sl2.png' %}" alt="" />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="{% static '/assets/img/sl3.png' %}" alt="" />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="{% static '/assets/img/sl4.png' %}" alt="" />
+              </a>
+              <a href="{% url 'inquiry' %}">
+                <img src="{% static 'i/assets/img/sl5.png' %}" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="li mb">
+          <a href="javascript:;" class="tit-16 col-fff">Subscribe</a>
+          <a href="{% url 'newsletter' %}" class="f-link col-999">
+            <div class="icon">
+              <img src="{% static '/assets/img/flink.png' %}" alt="" />
+            </div>
+            <div class="tit-14">
+              Subscribe Newsletter
+            </div>
+          </a>
+          <div class="share-list">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="{% static '/assets/img/sl1.png' %}" alt="" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="{% static '/assets/img/sl2.png' %}" alt="" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="{% static '/assets/img/sl3.png' %}" alt="" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="{% static '/assets/img/sl4.png' %}" alt="" />
+            </a>
+            <a href="{% url 'inquiry' %}">
+              <img src="{% static '/assets/img/sl5.png' %}" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bot">
+        <div class="left">
+          <script>
+            document.write(
+              " Copyright 2011-" +
+              new Date().getFullYear() +
+              "  Zhejiang Uniview Technologies Co.,Ltd.All rights reserved."
+            );
+          </script>
+        </div>
+        <div class="right">
+          <a href="{% url 'cookie_policy' %}">Cookie Policy</a>
+        </div>
+      </div>
+    </footer>
+    <div class="bgmak"></div>
+  </div>
+  <script>
+    $(document).ready(function () {
+    })
+  </script>
+</body>
+
+</html>

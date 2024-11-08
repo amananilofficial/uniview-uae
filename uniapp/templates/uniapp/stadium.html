@@ -1,0 +1,641 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="content-language" content="zh-CN" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+  <title>Stadium - Uniview - Leader of AIoT Solution</title>
+  <meta name="MSSmartTagsPreventParsing" content="true" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="renderer" content="webkit">
+  <meta name="keywords" content="Stadium" />
+  <meta name="description" content="Stadium" />
+  {% load static %}
+
+  <link rel="shortcut icon" href="{% static 'assets/images/favicon.ico' %}" />
+  <link rel="stylesheet" href="{% static 'css/unv.css' %}">
+  <link rel="stylesheet" href="{% static 'css/ip_jump.css' %}">
+  <link rel="stylesheet" href="{% static 'css/hover.css' %}">
+  <link rel="stylesheet" href="{% static 'css/mob.css' %}">
+  <link rel="stylesheet" href="{% static 'css/video.css' %}">
+  <link rel="stylesheet" href="{% static 'swiper/swiper.min.css' %}">
+  <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+  <script src="{% static 'js/jquery.transit.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'swiper/swiper.min.js' %}"></script>
+  <script src="{% static 'js/JR.js' %}"></script>
+
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PTC2RNS');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- begin XHL code-->
+  <script>
+    if (!window._XHL) {
+      (function (x, h, l, j, s) {
+        x[j] = x[j] || function () {
+          (x[j].a = x[j].a || []).push(arguments)
+        };
+        s = h.createElement(l);
+        z = h.getElementsByTagName(l)[0];
+        s.async = true;
+        s.charset = 'UTF-8';
+        s.src = 'https://lib.leadscloud.com/xhltrackingwithchat.js';
+        z.parentNode.insertBefore(s, z);
+      })(window, document, 'script', '_XHL');
+      _XHL("entID", 10970)
+    }
+  </script>
+  <!--end XHL code-->
+
+  <style type="text/css">
+    #dialog {
+      height: 110px;
+      width: 100%;
+      background-color: #ccc;
+      color: #333;
+      text-align: center;
+      font-size: 12px;
+      padding-top: 10px;
+      position: fixed;
+      bottom: 0;
+      z-index: 99;
+    }
+
+    .hide {
+      display: none !important;
+    }
+
+    #dialog p {
+      position: relative;
+      margin: 0 auto;
+      max-width: 960px;
+      line-height: 1.4;
+      margin-bottom: 20px;
+      font-size: 12px;
+    }
+
+    .pphide {
+      display: none;
+    }
+
+    .ppshow {
+      display: inline-block;
+    }
+
+    #dialog .ppclose {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 0;
+      top: 10px;
+    }
+
+    #dialog span {
+      display: inline;
+      margin-left: 20px;
+    }
+
+    #dialog .btu-two {
+      display: flex;
+      /* width: 200px; */
+      justify-content: space-evenly;
+      padding: 0 40%;
+    }
+
+    #dialog .btu-deny,
+    #dialog .btu-allow {
+      padding: 2px 20px;
+      font-size: 14px;
+      border-radius: 30px;
+    }
+
+    #dialog .btu-deny {
+      border: 1px solid #08c;
+    }
+
+    #dialog .btu-allow {
+
+      border: 1px solid #08c;
+
+      background: #08c;
+      color: white;
+    }
+
+    @media screen and (max-width: 960px) {
+      .ppshow {
+        display: none;
+        background-color: red;
+      }
+    }
+  </style>
+  <script type="text/javascript">
+    function cookiesave(n, v, mins, dn, path) {
+      if (n) {
+        if (!mins) mins = 365 * 24 * 60;
+        //if(!mins) mins = 1;
+        if (!path) path = "../../index.html";
+        var date = new Date();
+
+        date.setTime(date.getTime() + (mins * 60 * 1000));
+
+        var expires = "; expires=" + date.toGMTString();
+
+        if (dn) dn = "domain=" + dn + "; ";
+        //alert(n + "=" + v + expires + "; " + dn + "path=" + path);
+        document.cookie = n + "=" + v + expires + "; " + dn + "path=" + path;
+      }
+    }
+
+    function cookieget(n) {
+      var name = n + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+      }
+      return "";
+    }
+
+    function closeclick() {
+      document.getElementById('dialog').style.display = 'none';
+      cookiesave('globalcloseclick', 'globalcloseclick', '', '', '');
+    }
+
+    function clickclose() {
+      if (cookieget('globalcloseclick') == 'globalcloseclick') {
+        document.getElementById('dialog').className = 'pphide';
+      } else {
+        document.getElementById('dialog').className = 'ppshow';
+      }
+    }
+    window.onload = clickclose;
+  </script>
+
+
+</head>
+<meta name="google-site-verification" content="c_USIUkHG5x1Uhx-uB1jOU2HsduHV3l9Za4ScCa4QuE" />
+
+<body>
+  <div id="header">
+    <div id="dialog" class="hide">
+      <p>Hello, your privacy is important to us. Uniview websites use cookies to store info on your device and create
+        the most secure and effective website. By continuing to use our websites, please accept that cookies could be
+        stored on your device, as outlined in our
+        <a href="{% url 'cookie_policy' %}">cookie policy</a>.
+      </p>
+      <div class="btu-two">
+        <a class="btu-deny" href="javascript:closeclick();">Deny</a>
+        <a class="btu-allow" href="javascript:closeclick();">Allow All</a>
+      </div>
+    </div>
+    <div class="black_background" style="display: none">
+      <div class="ip_container">
+        <div style="display: inline-block" class="title">
+          <span class="langtiptext" style="color:white"></span>
+        </div>
+        <ul class="choice" data-href="">
+          <li id="reponse" class="li_input">
+            <span class="langname" style="color:white"></span>
+            <i style="float: right">
+              <img src="{% static '/assets/img/arrow.png' %}" alt="Arrow">
+            </i>
+          </li>
+        </ul>
+        <div class="right">
+          <div id="skip" class="jump langskip">
+            <span id="button_text" class="langbtntext" style="color:white"></span>
+          </div>
+          <div id="close" class="close_button langclose">
+            <img src="{% static '/assets/img/close.png' %}" alt="Close">
+          </div>
+        </div>
+      </div>
+    </div>
+    <noscript><iframe src="#.googletagmanager.com/ns.html?id=GTM-PTC2RNS" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+        <header>
+          <div class="pc-header wr">
+            <div class="h-top wr">
+              <a href="{% url 'index' %}" class="logo">
+                <img src="{% static '/assets/img/logo.svg' %}" alt="">
+              </a>
+              <div class="language">
+                <div class="icon">
+                  <img src="{% static '/assets/img/dq.png' %}" alt="">
+                </div>
+                <div class="tit-14 col-fff txt">Global - English</div>
+              </div>
+            </div>
+            <div class="h-bot wr">
+              <div class="nav">
+                <div class="li showlogo">
+                  <a href="{% url 'index' %}" class="logo">
+                    <img src="{% static '/assets/img/logo2.svg' %}" alt="">
+                  </a>
+                </div>
+                <div class="li pro">
+                  <a href="{% url 'product' %}" class="tit tit-18">products</a>
+                </div>
+                <div class="li sol">
+                  <a href="{% url 'solutions' %}" class="tit tit-18">Solutions</a>
+                </div>
+                <div class="li abo">
+                  <a href="{% url 'about' %}" class="tit tit-18">About Us</a>
+                </div>
+                <div class="li">
+                  <a href="{% url 'contact' %}" class="tit tit-18">Contact Us</a>
+                </div>
+              </div>
+              <div class="right-btn">
+                <div class="seach box">
+                  <img src="{% static '/assets/img/ss.svg' %}" alt="" class="tran-middle op1">
+                  <img src="{% static '/assets/img/ss2.svg' %}" alt="" class="tran-middle op2">
+                </div>
+                <div class="lan box">
+                  <img src="{% static '/assets/img/dq2.png' %}" alt="" class="tran-middle op1">
+                  <img src="{% static '/assets/img/dq.png' %}" alt="" class="tran-middle op2">
+                </div>
+              </div>
+              <div class="seac-box wr">
+                <div class="img">
+                  <img src="{% static '/assets/img/ss.svg' %}" alt="">
+                  <input type="text" placeholder="Search" name="k" id="K" value="">
+                  <span class="clear">X</span>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="language-box">
+            <div class="mak"></div>
+            <div class="close">
+              <img src="{% static '/assets/img/close.png' %}" alt="" class="tran-middle">
+            </div>
+            <div class="lan-list">
+              <div class="li">
+                <div class="tit tit-24 lh1">Global</div>
+                <div class="list wr">
+                  <a href="{% url 'global_english' %}" class="lis tit-16"> <span>Global </span> - English</a>
+                </div>
+              </div>
+    
+              <div class="li">
+                <div class="tit tit-24 lh1">Middle East</div>
+                <div class="list wr">
+                  <a href="{% url 'arabic' %}" class="lis tit-16"> <span>Arabic </span> - العربية</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    
+          <div class="mb-header wr">
+            <div class="main">
+              <a href="#" class="logo">
+                <img src="{% static '/assets/img/logo1.png' %}" alt="">
+              </a>
+              <div class="right-btn">
+                <a href="javascript:void(0)" class="li">
+                  <img src="{% static '/assets/img/dl.png' %}" alt="" class="tran-middle">
+                </a>
+                <div class="li seach">
+                  <img src="{% static '/assets/img/mseach.png' %}" alt="" class="tran-middle">
+                </div>
+                <div class="mune li">
+                  <img src="{% static '/assets/img/mun1.png' %}" alt="" class="op1 tran-middle">
+                  <img src="{% static '/assets/img/mclose.png' %}" alt="" class="op2 tran-middle">
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="headerseach ">
+            <div class="top_seach">
+              <div class="view">
+                <div class="formbox">
+                  <input type="text" placeholder="Search" name="k" id="K2" value="" class="txt">
+                  <input type="submit" name="" id="SearchBtn" value="Search" class="submit">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="m-nav">
+            <div class="nav">
+              <div class="li">
+                <a href="{% url 'product' %}" class="tit">
+                  <div>products</div>
+                  <div class="icon">
+                    <img src="{% static '/assets/img/morejt3.png' %}" alt="">
+                  </div>
+                </a>
+              </div>
+              <div class="li">
+                <a href="{% url 'solutions' %}" class="tit">
+                  <div>Solutions</div>
+                  <div class="icon">
+                    <img src="{% static '/assets/img/morejt3.png' %}" alt="">
+                  </div>
+                </a>
+              </div>
+              <div class="li">
+                <a href="{% url 'about' %}" class="tit">
+                  <div>About Us</div>
+                  <div class="icon">
+                    <img src="{% static '/assets/img/morejt3.png' %}" alt="">
+                  </div>
+                </a>
+              </div>
+              <div class="li">
+                <div class="tit">
+                  <div class="lan">
+                    <img src="{% static '/assets/img/dq2.png' %}" alt="">
+                    GLOBAL / ENGLISH
+                  </div>
+                  <div class="icon">
+                    <img src="{% static '/assets/img/morejt3.png' %}" alt="">
+                  </div>
+                </div>
+                <div class="tow-li">
+                  <div class="li-top li-top1">
+                    <div class="left">
+                      <div class="icon">
+                        <img src="{% static '/assets/img/morejt3.png' %}" alt="">
+                      </div>
+                      <div>GLOBAL / ENGLISH</div>
+                    </div>
+                    <div class="close">
+                      <img src="{% static '/assets/img/mclose.png' %}" alt="">
+                    </div>
+                  </div>
+                  <div class="lis">
+                    <a href="javascript:;" class="tit">
+                      <div>Global</div>
+                      <div class="icon">
+                        <img src="{% static '/assets/img/morejt3.png' %}" alt="">
+                      </div>
+                    </a>
+                    <div class="three-li">
+                      <div class="li-top li-top2">
+                        <div class="left">
+                          <div class="icon">
+                            <img src="{% static '/assets/img/morejt3.png' %}" alt="">
+                          </div>
+                          <div>Global</div>
+                        </div>
+                        <div class="close">
+                          <img src="{% static '/assets/img/mclose.png' %}" alt="">
+                        </div>
+                      </div>
+                      <div class="liss">
+                        <a href="{% url 'global_english' %}" class="tit">
+                          <div><span>Global </span> - English</div>
+                          <div class="icon">
+                            <img src="{% static '/assets/img/morejt3.png' %}" alt="">
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lis">
+                    <a href="javascript:;" class="tit">
+                      <div>Middle East</div>
+                      <div class="icon">
+                        <img src="{% static '/assets/img/morejt3.png' %}" alt="">
+                      </div>
+                    </a>
+                    <div class="three-li">
+                      <div class="li-top li-top2">
+                        <div class="left">
+                          <div class="icon">
+                            <img src="{% static '/assets/img/morejt3.png' %}" alt="">
+                          </div>
+                          <div>Middle East</div>
+                        </div>
+                        <div class="close">
+                          <img src="{% static '/assets/img/mclose.png' %}" alt="">
+                        </div>
+                      </div>
+                      <div class="liss">
+                        <a href="{% url 'arabic' %}" class="tit">
+                          <div><span>Arabic </span> - العربية</div>
+                          <div class="icon">
+                            <img src="{% static '/assets/img/morejt3.png' %}" alt="">
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Include CSS and JS files -->
+          <link rel="stylesheet" href="{% static 'css/style.css' %}">
+          <script src="{% static 'js/script.js' %}"></script>
+    
+        </header>
+  </div>
+  <div class="header-fix wr"></div>
+  <div class="sub-banner wr">
+    <div class="bg pc" style="background-image: url(../../static/assets/img/20240808_1906594_355_995123_140447_0.png);">
+    </div>
+    <div class="bg mb" style="background-image: url(../../static/assets/img/20240808_1906595_werewr_995123_140447_0.png);">
+    </div>
+    <div class="txt col-fff">
+      <div class="unv-tit lh1">Uniview Solution for Stadium</div>
+      <div class="unv-subtit">Secure Stadiums, Safe Spectators</div>
+    </div>
+  </div>
+  <div class="adds-nav wr">
+    <div class="wr">
+      <a href="javascript:;">Stadium Solution</a>
+      <a href="javascript:;">Success Cases</a>
+    </div>
+  </div>
+  <div class="wr">
+    <div class="view">
+      <div class="unv-solution-wrap pordw">
+        <h2>Stadium Solution</h2>
+        <div class="inc-box">
+          <P>A Stadium, as a bustling venue, faces a myriad of threats, including overcrowding, unruly behavior, and
+            potential violence. Effective security measures are essential not only to safeguard fans and athletes, but
+            also to uphold the reputation of the stadium itself. </P>
+          <P>By integrating UNV’s advanced technology into your operations, you can achieve unparalleled peace of mind.
+            Our AIoT devices significantly reduce response times and enhance situational awareness, ensuring that your
+            stadium is always a safe place for all attendees.</P>
+        </div>
+        <div class="solution-list-wrap">
+          <div class="solution-list-box">
+            <div class="img-box"> <img src="../../static/assets/img/20240808_1906532_Frame40_995120_140447_0.png" alt="">
+            </div>
+            <div class="ft-box">
+              <h4>Robust perimeter protection with Tri-guard technology</h4>
+              <p>The perimeter of a sports stadium is typically extensive and requires a large number of security
+                personnel to cover it, which may cost a lot of money and manpower. Effective perimeter protection is
+                crucial for preventing intrusions, break-ins, and other security threats. With deep-learning algorithms,
+                UNV's Tri-guard series swiftly detects intruders and makes light and sound warnings, ensuring a rapid
+                response to safeguard your premises. </p>
+            </div>
+          </div>
+          <div class="solution-list-box">
+            <div class="img-box"> <img src="../../static/assets/img/20240808_1906531_Group58_995119_140447_0.png" alt="">
+            </div>
+            <div class="ft-box">
+              <h4>Embrace the large scene with MultiView and OmniView</h4>
+              <p>MultiView cameras can realize multi-directional monitoring and seamlessly combine panoramic views with
+                details, making them the best choice for wide sports fields. OmniView cameras provide a wider field of
+                view with a single installation, eliminating blind spots in the stadium. Choose MultiView and OmniView
+                cameras to optimize security across your sports venue, ensuring unparalleled coverage and
+                cost-effectiveness. </p>
+            </div>
+          </div>
+          <div class="solution-list-box">
+            <div class="img-box"> <img src="../../static/assets/img/20240808_1906530_Frame140_995118_140447_0.png" alt="">
+            </div>
+            <div class="ft-box">
+              <h4>Ensure smooth flow of foot and vehicle traffic</h4>
+              <p>Managing stadium entrances with advanced access control system helps fans enter venues quickly and
+                smoothly without long queues, adding access control devices in specific areas to ensure that only
+                authorized personnel can enter the area.<br>
+                - Support multiple authentication methods including card, password, QR code, etc.<br>
+                ANPR ensures smooth and automatic entry and exit of vehicles in parking lots, and offer effective
+                parking guidance through parking space detection, maintaining traffic flow during peak hours.<br>
+                - Effective parking guidance with parking spaces detection and license plates recognition<br>
+                - 24-hour parking lot monitoring with vivid full-color images even in dim night<br> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="unv-solution-wrap pordw">
+        <h2>Success Cases</h2>
+        <div class="unv-solution-case-wrap">
+          <a class="solution-case-box">
+            <img src="../../static/assets/img/20240808_1906534_Group213_995122_140447_0.png" alt="">
+            <h4>Sports Arena Palacoccia in Italy</h4>
+          </a>
+          <a class="solution-case-box">
+            <img src="../../static/assets/img/20240808_1906533_Mask%20group_995121_140447_0.png" alt="">
+            <h4>Hong Kong Coliseum in China</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <footer>
+      <div class="footer-top">
+        <div class="foot-nav">
+          <div class="li">
+            <a href="javascript:;" class="tit">Quick Links</a>
+            <div class="sub-nav">
+              <a href="{% url 'product' %}">products</a>
+              <a href="{% url 'solutions' %}">solutions</a>
+              <a href="{% url 'about' %}">About us</a>
+            </div>
+          </div>
+          <div class="li">
+            <a href="javascript:;" class="tit">Newsroom</a>
+            <div class="sub-nav">
+              <a href="{% url 'videos' %}">Videos</a>
+            </div>
+          </div>
+          <div class="li">
+            <a href="javascript:;" class="tit">Our Company</a>
+            <div class="sub-nav">
+              <a href="{% url 'contact' %}">Contact Us</a>
+              <a href="{% url 'careers' %}">Careers</a>
+            </div>
+          </div>
+          <div class="li">
+            <a href="javascript:;" class="tit">Subscribe</a>
+            <a href="{% url 'newsletter' %}" class="f-link col-999">
+              <div class="icon">
+                <img src="{% static '/assets/img/flink.png' %}" alt="" />
+              </div>
+              <div class="tit-14">
+                Subscribe Newsletter
+              </div>
+            </a>
+            <div class="share-list">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="{% static '/assets/img/sl1.png' %}" alt="" />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="{% static '/assets/img/sl2.png' %}" alt="" />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="{% static '/assets/img/sl3.png' %}" alt="" />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="{% static '/assets/img/sl4.png' %}" alt="" />
+              </a>
+              <a href="{% url 'inquiry' %}">
+                <img src="{% static 'i/assets/img/sl5.png' %}" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="li mb">
+          <a href="javascript:;" class="tit-16 col-fff">Subscribe</a>
+          <a href="{% url 'newsletter' %}" class="f-link col-999">
+            <div class="icon">
+              <img src="{% static '/assets/img/flink.png' %}" alt="" />
+            </div>
+            <div class="tit-14">
+              Subscribe Newsletter
+            </div>
+          </a>
+          <div class="share-list">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="{% static '/assets/img/sl1.png' %}" alt="" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="{% static '/assets/img/sl2.png' %}" alt="" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="{% static '/assets/img/sl3.png' %}" alt="" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="{% static '/assets/img/sl4.png' %}" alt="" />
+            </a>
+            <a href="{% url 'inquiry' %}">
+              <img src="{% static '/assets/img/sl5.png' %}" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bot">
+        <div class="left">
+          <script>
+            document.write(
+              " Copyright 2011-" +
+              new Date().getFullYear() +
+              "  Zhejiang Uniview Technologies Co.,Ltd.All rights reserved."
+            );
+          </script>
+        </div>
+        <div class="right">
+          <a href="{% url 'cookie_policy' %}">Cookie Policy</a>
+        </div>
+      </div>
+    </footer>
+    <div class="bgmak"></div>
+  </div>
+</body>
+
+</html>
