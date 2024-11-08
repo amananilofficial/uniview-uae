@@ -15,3 +15,6 @@ python manage.py migrate = to migrate
 python manage.py collectstatic = to create static files
 
 python manage.py runserver = to django server 
+
+127.0.0.1:8000
+127.0.0.1:8000/admin
